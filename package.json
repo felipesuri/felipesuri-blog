@@ -1,11 +1,10 @@
 {
   "name": "felipesuri",
-  "private": true,
-  "description": "My personal website using GatsbyJS",
-  "version": "1.0.0",
+  "description": "My personal website",
+  "version": "2.0.0",
   "author": {
-    "name": "Felipe Suri",
-    "email": "felipeheredia1234@gmail.com",
+    "name": "felipesuri",
+    "email": "contato@felipesuri.com",
     "url": "https://felipesuri.com"
   },
   "dependencies": {
