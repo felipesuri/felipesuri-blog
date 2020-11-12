@@ -1,6 +1,6 @@
-require("dotenv").config();
+require('dotenv').config()
 
-const queries = require("./src/utils/algolia-queries");
+const queries = require('./src/utils/algolia-queries')
 
 module.exports = {
   siteMetadata: {
@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-resolve-src`,
+    `gatsby-plugin-typescript`,
     // Need to be the first to work with gatsby-remark-images
     {
       resolve: `gatsby-source-filesystem`,
@@ -83,8 +84,8 @@ module.exports = {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          "/*": [
-            "Strict-Transport-Security: max-age=63072000; includeSubDomains; preload",
+          '/*': [
+            'Strict-Transport-Security: max-age=63072000; includeSubDomains; preload',
           ],
         },
       },
@@ -112,4 +113,4 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`,
   ],
-};
+}
