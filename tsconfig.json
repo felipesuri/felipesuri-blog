@@ -1,20 +1,33 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "jsx": "preserve",
-    "lib": ["dom", "esnext"],
+    "target": "es6",
     "module": "commonjs",
-    "rootDir": "./src",
-    "strict": true,
-    "noEmit": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "noUnusedLocals": false,
-    "allowJs": true,
     "strictPropertyInitialization": false,
-    "baseUrl": "./src",
+    "allowJs": true,
+    "jsx": "react",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "rootDir": "./src",
+    "strict": true,
+    "baseUrl": "./src",
+    "paths": {
+      "components/*": [
+        "components/*"
+      ],
+      "pages/*": [
+        "pages/*"
+      ],
+      "templates/*": [
+        "templates/*"
+      ],
+      "styles/*": [
+        "styles/*"
+      ],
+      "utils/*": [
+        "utils/*"
+      ],
+    },
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "exclude": ["node_modules", "public", ".cache"]
