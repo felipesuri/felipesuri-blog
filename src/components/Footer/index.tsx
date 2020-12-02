@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import * as S from "./styled";
+import * as S from './styled'
 
 const Footer = () => (
   <S.FooterWrapper>
@@ -25,6 +25,6 @@ const Footer = () => (
       </S.ExternalLink>
     </S.Container>
   </S.FooterWrapper>
-);
+)
 
-export default Footer;
+export default Footer

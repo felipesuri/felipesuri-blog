@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import * as S from "./styled";
+import * as S from './styled'
 
 const ButtonLink = ({ children, to, direction }) => (
   <S.ButtonLinkWrapper>
@@ -9,12 +9,12 @@ const ButtonLink = ({ children, to, direction }) => (
       {children}
     </S.ButtonLink>
   </S.ButtonLinkWrapper>
-);
+)
 
 ButtonLink.propTypes = {
   children: PropTypes.node.isRequired,
   to: PropTypes.node.isRequired,
   direction: PropTypes.node.isRequired,
-};
+}
 
-export default ButtonLink;
+export default ButtonLink

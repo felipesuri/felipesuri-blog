@@ -1,30 +1,30 @@
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
+const path = require('path')
+const { createFilePath } = require('gatsby-source-filesystem')
 
 // To add the slug field to each post
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
+  const { createNodeField } = actions
   // Ensures we are processing only markdown files
-  if (node.internal.type === "MarkdownRemark") {
+  if (node.internal.type === 'MarkdownRemark') {
     // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
     const slug = createFilePath({
       node,
       getNode,
-      basePath: "pages",
-    });
+      basePath: 'pages',
+    })
 
     // Creates new query'able field with name of 'slug'
     createNodeField({
       node,
-      name: "slug",
+      name: 'slug',
       value: `/blog/${slug.slice(12)}`,
-    });
+    })
   }
-};
+}
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
-  const blogPost = path.resolve(`./src/templates/blog-post.js`);
+  const { createPage } = actions
+  const blogPost = path.resolve(`./src/templates/blog-post.tsx`)
 
   return graphql(`
     {
@@ -49,10 +49,10 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    if (result.errors) throw result.errors;
+    if (result.errors) throw result.errors
 
     // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges;
+    const posts = result.data.allMarkdownRemark.edges
 
     posts.forEach(({ node, next, previous }) => {
       createPage({
@@ -64,24 +64,24 @@ exports.createPages = ({ graphql, actions }) => {
           previous: next,
           next: previous,
         },
-      });
-    });
+      })
+    })
 
     // Create blog post list pages
-    const postsPerPage = 10;
-    const numPages = Math.ceil(posts.length / postsPerPage);
+    const postsPerPage = 10
+    const numPages = Math.ceil(posts.length / postsPerPage)
 
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/blog/` : `/blog/page/${i + 1}`,
-        component: path.resolve("./src/templates/blog-list.js"),
+        component: path.resolve('./src/templates/blog-list.tsx'),
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,
           numPages,
           currentPage: i + 1,
         },
-      });
-    });
-  });
-};
+      })
+    })
+  })
+}

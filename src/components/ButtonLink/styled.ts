@@ -1,15 +1,14 @@
-import styled from "styled-components";
-import media from "styled-media-query";
-
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import styled from 'styled-components'
+import media from 'styled-media-query'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const ButtonLinkWrapper = styled.section`
   padding-bottom: 0.7rem;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     padding-bottom: 0.5rem;
   `}
-`;
+`
 
 export const ButtonLink = styled(AniLink)`
   color: #aa52cc;
@@ -22,7 +21,7 @@ export const ButtonLink = styled(AniLink)`
 
   &:after {
     background-color: #aa52cc;
-    content: "";
+    content: '';
     height: 2px;
     margin-top: 0.5rem;
     left: 0;
@@ -38,4 +37,4 @@ export const ButtonLink = styled(AniLink)`
       transform: scaleX(1);
     }
   }
-`;
+`

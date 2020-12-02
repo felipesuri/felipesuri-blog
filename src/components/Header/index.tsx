@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import * as S from "./styled";
+import Profile from 'components/Profile'
+import MenuLinks from 'components/MenuLinks'
 
-import Profile from "components/Profile";
-import MenuLinks from "components/MenuLinks";
+import * as S from './styled'
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
         <MenuLinks />
       </S.HeaderGroup>
     </S.HeaderWrapper>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

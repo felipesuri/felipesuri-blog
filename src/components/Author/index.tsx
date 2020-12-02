@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import * as S from "./styled";
+import * as S from './styled'
 
 const Author = () => (
   <S.AuthorWrapper>
@@ -13,6 +13,6 @@ const Author = () => (
       de modificar todo o mundo e a humanidade.
     </S.AuthorContent>
   </S.AuthorWrapper>
-);
+)
 
-export default Author;
+export default Author

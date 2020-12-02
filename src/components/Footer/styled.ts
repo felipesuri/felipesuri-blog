@@ -1,16 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const FooterWrapper = styled.div`
-  margin-bottom: 5rem;
-`;
+  margin-bottom: 6rem;
+`
 
 export const Container = styled.div`
   text-align: center;
   color: #b8bbd9;
-  font-size: 0.9rem;
-`;
+  font-size: 1.5rem;
+`
 
 export const InternalLink = styled(AniLink)`
   color: #b8bbd9;
@@ -22,11 +22,11 @@ export const InternalLink = styled(AniLink)`
   }
 
   &:before {
-    content: "•";
+    content: '•';
     display: inline-block;
     margin: 0 1rem;
   }
-`;
+`
 
 export const ExternalLink = styled.a`
   color: #b8bbd9;
@@ -38,8 +38,8 @@ export const ExternalLink = styled.a`
   }
 
   &:before {
-    content: "•";
+    content: '•';
     display: inline-block;
     margin: 0 1rem;
   }
-`;
+`
