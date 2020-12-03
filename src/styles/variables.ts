@@ -34,8 +34,8 @@ export const Height = {
 // --------------------------------------------------
 
 export const Color = {
-  white: `rgba(255, 255, 255, .9)`,
-  black: `rgba(15, 15, 15, .95)`,
+  white: '#FFFEF7',
+  black: 'rgba(15, 15, 15, .95)',
   whiteSolid: `#ffffff`,
   blackSolid: `#000000`,
   blue: `#187888`,
@@ -47,6 +47,7 @@ export const Color = {
   grayLighter: `#efefef`,
   grayWhite: `#f1f1f1`,
   yellow: `#e6af05`,
+  purple: '#aa52cc',
 }
 
 export const Transition = {

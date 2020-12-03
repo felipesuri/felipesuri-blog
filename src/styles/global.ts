@@ -17,8 +17,6 @@ export default createGlobalStyle`
   }
 
   body {
-    /* background: #373636; */
-    background: #FFFEF7;
     line-height: 1;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --bg: ${V.Color.white};
@@ -29,6 +27,10 @@ export default createGlobalStyle`
     --primaryColor: ${V.Color.black};
     --secondaryColor: ${V.Color.gray};
     --boxShadow: rgba(18, 18, 18, .12);
+    
+    --whiteSolid: ${V.Color.whiteSolid};
+    --purple: ${V.Color.purple};
+    background: var(--bg);
   }
 
   body.theme-dark {

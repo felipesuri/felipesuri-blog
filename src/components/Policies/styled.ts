@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import media from "styled-media-query";
+import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const PoliciesWrapper = styled.div`
   margin: 0 6rem 2rem;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     margin: 0 0.9rem 2rem;
   `}
 
@@ -12,7 +12,7 @@ export const PoliciesWrapper = styled.div`
   h1,
   h2,
   h3 {
-    color: #fff;
+    color: var(--primaryColor);
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.7;
@@ -60,8 +60,8 @@ export const PoliciesWrapper = styled.div`
   }
 
   a {
-    border-bottom: 1px dashed #aa52cc;
-    color: #aa52cc;
+    border-bottom: 1px dashed var(--purple);
+    color: var(--purple);
     text-decoration: none;
     transition: opacity 0.5s;
 
@@ -69,4 +69,4 @@ export const PoliciesWrapper = styled.div`
       opacity: 0.8;
     }
   }
-`;
+`

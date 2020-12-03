@@ -1,37 +1,37 @@
-import styled from "styled-components";
-import media from "styled-media-query";
+import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const PostHeader = styled.header`
-  color: #fff;
+  color: var(--primaryColor);
   margin: auto;
   padding-top: 3rem;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     padding-top: 0.7rem;
   `}
-`;
+`
 
 export const PostTitle = styled.h1`
   font-size: 2.2rem;
   font-weight: 500;
   margin: 1rem auto;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     font-size: 1.8rem;
   `}
-`;
+`
 
 export const PostDescription = styled.h2`
   font-size: 1.5rem;
   padding-bottom: 0.9rem;
-  font-family: "Open Sans", sans-serif;
-`;
+  font-family: 'Open Sans', sans-serif;
+`
 
 export const PostDate = styled.p`
   padding-top: 1rem;
   font-size: 1.1rem;
-  font-family: "Noto Sans", sans-serif;
-`;
+  font-family: 'Noto Sans', sans-serif;
+`
 
 export const MainContent = styled.section`
   margin: auto;
@@ -48,13 +48,13 @@ export const MainContent = styled.section`
   .tags,
   iframe,
   .button-post {
-    color: #fff;
+    color: var(--primaryColor);
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.7;
     letter-spacing: 0.069rem;
     padding: 0 1.4rem;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   p {
@@ -66,7 +66,7 @@ export const MainContent = styled.section`
   h3,
   h4,
   h5 {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     margin: 2.4rem auto 1rem;
   }
 
@@ -103,11 +103,11 @@ export const MainContent = styled.section`
   }
 
   blockquote {
-    color: #fff;
-    border-left: 0.3rem solid #aa52cc;
+    color: var(--primaryColor);
+    border-left: 0.3rem solid var(--purple);
     padding: 0 1.875rem;
     margin: 3.125rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
   hr {
@@ -181,16 +181,18 @@ export const MainContent = styled.section`
   }
 
   a {
-    font-family: "Berkshire Swash", cursive;
-    border-bottom: 1px dashed #aa52cc;
-    color: #aa52cc;
+    font-family: 'Berkshire Swash', cursive;
+    border-bottom: 1px dashed var(--purple);
+    color: var(--purple);
     text-decoration: none;
     transition: opacity 0.5s;
+
     svg {
-      color: #fff;
+      color: var(--primaryColor);
     }
+
     &:hover {
       opacity: 0.8;
     }
   }
-`;
+`

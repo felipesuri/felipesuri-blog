@@ -16,12 +16,12 @@ export const ProfileItem = styled(AniLink)`
 
 export const SiteName = styled.h1`
   display: block;
-  color: #fff;
+  color: var(--whiteSolid);
   font-size: 2.8rem;
   transition: color 1s;
   font-family: 'Berkshire Swash', cursive;
 
   &:hover {
-    color: #aa52cc;
+    color: var(--purple);
   }
 `

@@ -11,7 +11,7 @@ export const ButtonLinkWrapper = styled.section`
 `
 
 export const ButtonLink = styled(AniLink)`
-  color: #aa52cc;
+  color: var(--purple);
   display: inline-block;
   font-size: 1.1rem;
   text-decoration: none;
@@ -20,7 +20,7 @@ export const ButtonLink = styled(AniLink)`
   will-change: transform;
 
   &:after {
-    background-color: #aa52cc;
+    background-color: var(--purple);
     content: '';
     height: 2px;
     margin-top: 0.5rem;

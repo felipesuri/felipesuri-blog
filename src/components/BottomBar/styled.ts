@@ -7,7 +7,7 @@ export const BottomBarWrapper = styled.aside`
   justify-content: center;
   height: 4rem;
 
-  background: #ffffff;
+  background: var(--bgSolid);
   flex-direction: row;
   padding: 0;
   bottom: 0;

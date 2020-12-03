@@ -20,17 +20,17 @@ export const Item = styled.li`
     transition: color 1s;
 
     &:hover {
-      color: #aa52cc;
+      color: var(--purple);
     }
   }
 `
 
 export const LinkInternal = styled(AniLink)`
-  color: #000;
+  color: var(--primaryColor);
   text-decoration: none;
 `
 
 export const LinkExternal = styled.a`
-  color: #000;
+  color: var(--primaryColor);
   text-decoration: none;
 `
